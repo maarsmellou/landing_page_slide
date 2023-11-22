@@ -1,0 +1,340 @@
+<!doctype = html>
+<html>
+<head>
+<META name="viewport" content="width=device-width,
+initial-scale=1">
+<STYLE>
+body{
+margin :0;
+font-family :arial, helvetica, sans-serif;}
+.navatas {
+overflow:hidden;
+background-color:#000000;}
+.navatas a{
+float:left;
+color:#f2f2f2;
+text-lign:center;
+padding : 14px 16px;
+text-decoration:none;
+font-size: 17px;}
+.navatas a:hover{
+background-color:#4CAF50;
+color:yelow;}
+.navatas a:active{
+background-color:#ddd;
+color:black;}
+.footer-bottom {
+background-img:url(footerbackground.jpg);
+background-size: 1920px 300px;
+color :#000000;
+margin-bottom:15px;
+padding:0px;
+text-align:center;}
+.kamboja{background-color:#b0c4de;}
+.social-media img {
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+.logo a{
+	text-decoration: none;
+	color:#08596A;
+	font-size: 30px;
+}
+
+</style>
+</head>
+<body>
+
+<DIV class="navatas">
+<div class="logo">
+	<a href="#">
+	<p>ASIATENGGARA.COM</p>
+	</div>
+<A href="active" href="index.html">Home</A>
+<A href="contact.html">Kontak</A>
+<A href="#download">Download</A>
+<A href="#tutorial">Tutorial</A>
+</div>
+<div style ="padding-left:16px">
+<style>
+	* {box-sizing:border-box}
+	body {font-family: Verdana,sans-serif;}
+	.mySlides {display:none}
+	
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 500px;
+	  position: relative;
+	  margin: auto;
+	}
+
+	/* Caption text */
+	.text {
+	  color: #f2f2f2;
+	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: center;
+	}
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+	
+	/* The dots/bullets/indicators */
+	.dot {
+	  height: 13px;
+	  width: 13px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active {
+	  background-color: #717171;
+	}
+	
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+	
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+	
+
+	@keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+	
+
+	/* On smaller screens, decrease text size */
+	@media only screen and (max-width: 300px) {
+	  .text {font-size: 11px}
+	}
+	</style>
+	</head>
+	<body>
+	
+
+	<h2>Asian contents</h2>
+	<p></p>
+	
+
+	<div class="slideshow-container">
+	
+
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 6</div>
+	  <img src="benderaindonesia.jpg" style="width:100%">
+	  <div class="text">indonesia</div>
+	</div>
+	
+
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 6</div>
+	  <img src="benderamalaysia.jpg" style="width:100%">
+	  <div class="text">malaysia</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 6</div>
+	  <img src="benderasingapore.jpg" style="width:100%">
+	  <div class="text">singapura</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">4 / 6</div>
+	  <img src="benderafilipina.jpg" style="width:100%">
+	  <div class="text">filipina</div>
+	</div>
+
+<div class="mySlides fade">
+	  <div class="numbertext">5 / 6</div>
+	  <img src="benderakamboja.jpg" style="width:100%">
+	  <div class="text">kamboja</div>
+	</div>
+
+<div class="mySlides fade">
+	  <div class="numbertext">6 / 6</div>
+	  <img src="benderalaos.jpg" style="width:100%">
+	  <div class="text">laos</div>
+	</div>
+
+
+	</div>
+	<br>
+	
+	<div style="text-align:center">
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	</div>
+	
+	<script>
+	var slideIndex = 0;
+	showSlides();
+	
+
+	function showSlides() {
+	    var i;
+	    var slides = document.getElementsByClassName("mySlides");
+	    var dots = document.getElementsByClassName("dot");
+	    for (i = 0; i < slides.length; i++) {
+	       slides[i].style.display = "none";  
+	    }
+	    slideIndex++;
+	    if (slideIndex> slides.length) {slideIndex = 1}    
+	    for (i = 0; i < dots.length; i++) {
+	        dots[i].className = dots[i].className.replace(" active", "");
+	    }
+	    slides[slideIndex-1].style.display = "block";  
+	    dots[slideIndex-1].className += " active";
+	    setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+	</script>
+<div style ="padding-left:0px">
+
+	<h1 ID="kamboja">KAMBOJA</h1>
+<h2>Sejarah negara kamboja</h2>
+<p><div>perkembangan peradaban Kamboja terjadi pada abad 1 Masehi. Selama abad ke-3,4 dan 5 Masehi, negara Funan dan Chenla 
+bersatu untuk membangun daerah Kamboja. Negara-negara ini mempunyai hubungan dekat dengan Cina dan India. Kekuasaan dua negara ini runtuh ketika Kerajaan Khmer dibangun dan berkuasa pada abad ke-9 sampai abad ke-13.
+Kerajaan Khmer masih bertahan hingga abad ke-15. Ibu kota Kerajaan Khmer terletak di Angkor, sebuah daerah yang dibangun 
+<p>pada masa kejayaan Khmer. Angkor Wat, yang dibangun juga pada saat itu, menjadi simbol bagi kekuasaan Khmer.
+Pada tahun 1432, Khmer dikuasai oleh Kerajaan Thai. Dewan Kerajaan Khmer memindahkan ibu kota dari Angkor ke Lovek, di mana 
+Kerajaan mendapat keuntungan besar karena Lovek adalah bandar pelabuhan. Pertahanan Khmer di Lovek akhirnya bisa dikuasai oleh Thai dan Vietnam, dan
+juga berakibat pada hilangnya sebagian besar daerah Khmer. Peristiwa ini terjadi pada tahun 1594. Selama 3 abad berikutnya, Khmer dikuasai oleh Raja-raja dari Thai dan Vietnam secara bergilir.</p>
+<p>Pada tahun 1863, Raja Norodom, yang dilantik oleh Thai, mencari perlindungan kepada Prancis. Pada tahun 1867, Raja Norodom menandatangani perjanjian dengan pihak Prancis yang isinya memberikan hak kontrol provinsi Battambang dan Siem Reap yang menjadi bagian Thai. Akhirnya, kedua daerah ini diberikan pada Kamboja pada tahun 1906 pada perjanjian perbatasan oleh Prancis dan Thai.
+Kamboja dijadikan daerah Protektorat oleh Prancis dari tahun 1863 sampai dengan 1953, sebagai daerah dari Koloni Indochina.</p> 
+<p>Pada November 1978, Vietnam menyerbu RD Kamboja untuk menghentikan genosida besar-besaran yang terjadi di Kamboja. Akhirnya, pada tahun 1989, perdamaian mulai digencarkan antara kedua pihak yang bertikai ini di Paris. PBB memberi mandat untuk mengadakan gencatan senjata antara pihak Norodom Sihanouk dan Lon Nol.
+Sekarang, Kamboja mulai berkembang berkat bantuan dari banyak pihak asing setelah perang, walaupun kestabilan negara ini kembali tergoncang setelah sebuah kudeta yang gagal terjadi pada tahun 1997</p>
+</div></p>
+<h2>Geografi</h2>
+<P>Kamboja mempunyai area seluas 181.035 km2. Berbatasan dengan Thailand di barat dan utara, Laos di timurlaut dan Vietnam di 
+timur dan tenggara. Kenampakan geografis yang menarik di Kamboja ialah adanya dataran lacustrine yang terbentuk akibat banjir di Tonle Sap. 
+Gunung tertinggi di Kamboja adalah Gunung Phnom Aoral yang berketinggian sekitar 1.813 mdpl.</p>
+</div>
+
+	<h1 ID="indonesia">INDONESIA</h1>
+<h2>letak geografis dan astronomi negara indonesia</h2>
+<p><div>Letak geografis dan astronomis Indonesia merupakan posisi negara Indonesia yang diartikan pada batasan-batasan yang mengelilingi Indonesia. Negara ini mempunyai banyak pulau yang tersusun dari Sabang hingga Merauke.
+
+Pada artikel kali ini, kita akan membahas lebih dalam mengenai letak geografis astronomis Indonesia. 
+
+Tampilan dari permukaan alam Indonesia ini terdiri dari daratan dan perairan dengan perbandingan antara 4:1. Penampakan daratan sendiri yakni berupa gunung tertinggi, sungai terpanjang di Indonesia, danau yang membuat Indonesia menjadi negara terluas ke 15 di dunia.
+
+Indonesia sendiri merupakan negara kepulauan yang terletak di posisi yang strategis dan digambarkan dari letak geografis serta letak astronomis.</p>
+
+<p>Indonesia adalah negara kepulauan yang paling besar di dunia. Negara yang satu ini juga mempunyai posisi geografis yang cukup unik dan menjadikannya strategis. Hal tersebut bisa kita lihat dari letak Indonesia yang berada diantara dua samudra dan juga dua benua serta mempunyai perairan yang menjadi salah satu jantung perdagangan internasional.
+
+Posisi tersebut kemudian menempatkan Indonesia berbatasan dengan laut dan darat secara langsung dengan sepuluh negara di kawasan. Kondisi ini membuat Indonesia menjadi rentan terhadap sengketa perbatasan dan juga ancaman keamanan yang bisa menyebabkan instabilitas di dalam negeri dan juga di kawasan itu sendiri.</div></p>	c
+	
+	
+	<h1 ID="singapore">SINGAPURA</h1>
+<h2>sejarah negara singapura</h2>
+<p><div>Singapura modern didirikan pada abad 19 berkat politik, perdagangan, dan seorang pria yang dikenal sebagai Sir Thomas Stamford Raffles.
+
+Selama masa ini, kerajaan Inggris sedang mengincar pelabuhan singgah di kawasan ini untuk dijadikan pangkalan armada niaganya, dan demi mencegah setiap kemajuan yang dibuat Belanda. Singapura, yang saat itu sudah menjadi pos perdagangan baru di sepanjang Selat Malaka, tampak sesuai.
+
+Raffles, yang saat itu menjabat Letnan Gubernur Bencoolen (sekarang Bengkulu) di Sumatera, mendarat di Singapura pada 29 Januari 1819. Menyadari besarnya potensi pulau yang tertutup rawa ini, ia pun membantu untuk melakukan perundingan dengan penguasa setempat dan menjadikan Singapura sebagai pos perdagangan. 
+Tak lama, kota ini pun berkembang sebagai pusat perdagangan dan tempat penyaluran barang, menarik imigran dari Tiongkok, India, Kepulauan Malaysia, dan lainnya.</p>
+
+<p>Pada 1822, Raffles mencanangkan Raffles Town Plan, yang juga dikenal sebagai Jackson Plan, untuk mengatasi masalah ketidakteraturan yang makin parah di koloni. Daerah pemukiman etnis dipisahkan menjadi empat wilayah. European Town dihuni oleh pedagang Eropa, Eurasia, dan orang Asia yang kaya-raya, 
+sedangkan etnis Tionghoa diletakkan di Chinatown hari ini dan di sisi tenggara Singapore River. Etnik India bermukim di Chulia Kampong di utara Chinatown, dan Kampong Gelam menampung warga Muslim, etnik Melayu, dan Arab yang bermigrasi ke Singapura. Singapura terus berkembang sebagai pos perdagangan, 
+dengan berdirinya beberapa bank utama, asosiasi komersial, dan Chambers of Commerce. Pada 1924, sebuah jalur lintasan yang menghubungkan bagian utara Singapura dengan Johor Bahru dibuka.</div></p>
+
+	<h1 ID="malaysia">MALAYSIA</h1>
+<h2>sejarah negara malaysia</h2>
+<p><div>Semenanjung Malaya berkembang sebagai pusat perdagangan utama di Asia Tenggara karena pertumbuhan perdagangan antara Tiongkok dan India dan negara lainnya melalui Selat Malaka yang ramai. Claudius Ptolemaeus menunjukkan Semenanjung Malaya pada peta dininya, 
+"Golden Chersonese" dengan Selat Malaka ditulis sebagai "Sinus Sabaricus".
+[44] Dari pertengahan hingga akhir milenium pertama, sebagian besar semenanjung, termasuk Nusantara, berada di bawah pengaruh Sriwijaya.</p>
+
+<p>Kerajaan Melayu yang paling awal tercatat dalam sejarah mulai bertumbuh dari kota pelabuhan tepi pantai yang mulai dihuni pada abad ke-10. 
+Di antara kerajaan-kerajaan ini termasuk Langkasuka dan Lembah Bujang di Kedah, dan juga Beruas dan Gangga Negara di Perak dan Pan Pan di Kelantan. Diperkirakan semuanya adalah kerajaan Hindu atau Buddha. Islam tiba pada abad ke-14 di Terengganu.
+
+Benteng A Famosa di Melaka. Bangunan itu didirikan oleh bangsa Portugis pada abad ke-15.<p>
+<p>Terdapat banyak kerajaan Tiongkok dan India pada abad ke-2 dan ke-3 M — sebanyak 30 buah menurut sumber Tiongkok. Kedah — yang dikenal sebagai Kedaram, Cheh-Cha (menurut I-Ching), atau Kataha di dalam tulisan Palawa atau bahasa Sanskerta kuno — berada di jalur keramaian pedagang dan raja Sriwijaya dan raja dari India. Rajendra Chola, 
+seorang kaisar Tamil kuno yang diduga berada di sekitar Kota Gelanggi, menaklukkan Kedah pada 1025, tetapi penerusnya, Vira Rajendra Chola, harus melumpuhkan pemberontakan Kedah untuk mengatasi para penyerbu. Kedatangan Chola berhasil meredam keagungan Sriwijaya, yang memberi pengaruh besar kepada Kedah dan Pattani bahkan sampai ke Ligor.<p>
+
+<p>Kerajaan Buddhis Ligor segera kembali mengendalikan Kedah. Rajanya, Chandrabhanu, menggunakan tempat ini sebagai basis untuk menyerang Sri Lanka pada abad ke-11, sebuah peristiwa yang dipahat di atas prasasti batu di Nagapattinum di Tamil Nadu dan di dalam kisah-kisah bangsa Sri Lanka, Mahavamsa. Selama milenium pertama, 
+masyarakat di Semenanjung Malaya beragama Hindu dan Buddha dan berbahasa Sanskerta, hingga mereka beralih kepada Islam.</div></p>
+
+	<h1 ID="laos">LAOS</h1>
+<h2>sejarah negara laos</h2>
+<p><div>Wilayah Laos telah dihuni manusia selama ribuan tahun. Periode pra-sejarah negara ini tidak terlalu banyak diketahui. Diperkirakan bahwa sejumlah kelompok orang yang berbeda menetap di daerah Laos sebelum abad ke-14. Pada saat itu, wilayah Laos dikendalikan oleh Kerajaan Mon dan Kekaisaran Khmer.
+
+Bangsa Laos modern dianggap memiliki kaitan pada Kerajaan Lan Xang yang berdiri pada pertengahan abad ke-14 dan didirikan oleh Fa Ngum. Sebelum masa tersebut, negara itu sudah dihuni oleh orang Lao, orang Mon, 
+dan kelompok etnis lainnya. Pada abad ke-16, Buddhisme Theravada menjadi agama dominan.
+
+Dimulai pada pertengahan abad ke-17, Laos mengalami penurunan kondisi ekonomi dan politik. Pada akhir abad ke-18, Laos yang semakin melemah akhirnya ditaklukkan negara tetangga Thailand (Siam). 
+Pada akhir abad ke-19, Prancis yang baru saja menaklukkan Vietnam bernegosiasi dengan Thailand untuk mendapatkan Laos. Pada awal abad ke-20, negara itu sepenuhnya berada di bawah kendali Prancis.</p>
+
+<p>Selama Perang Dunia II, Jepang menduduki Laos. Setelah perang selesai, bersama dengan Vietnam, Laos lantas menyatakan kemerdekaannya. Prancis merespon dengan mengirimkan tentara dan mengambil kendali wilayah lagi.
+
+Gerakan nasionalis terus memperjuangkan kemerdekaan, sehingga pada tahun 1950 Prancis menyatakan Laos mendapatkan otonomi. Pada tahun 1954, Laos akhirnya merdeka sepenuhnya sebagai negara monarki konstitusional.</p>
+
+<p>Setelah kemerdekaannya, Laos mengalami periode ketidakstabilan politik. Hal ini diperparah dengan kepentingan Amerika Serikat di wilayah itu yang membutuhkan basis untuk memerangi Vietnam. Tercatat pemerintah koalisi pertama jatuh pada tahun 1958, meskipun pemerintahan pengganti segera terbentuk, tetapi segera jatuh lagi. 
+Laos menyatakan netralitas pada tahun 1962, saat terjadi konflik di Vietnam. Namun hal ini tidak menghentikan Amerika Serikat dan Vietnam Utara untuk membangun basis kekuatan di Laos sehingga menghancurkan sikap resmi bangsa untuk tetap netral. Meskipun Laos berusaha mempertahankan demokrasi, ketika AS menarik diri dari wilayah tersebut serta seiring kejatuhan Vietnam Selatan, 
+negara itu diambil alih oleh faksi komunis dengan dukungan militer dari Vietnam Utara.
+
+Pada akhir tahun 1975, raja dipaksa turun tahta dan Communist Lao People’s Democratic Republic segera dibentuk. Pemerintahan komunis yang didukung Vietnam membuat kondisi ekonomi Laos semakin memburuk. Akhirnya, dimulai pada akhir tahun 1980-an, Laos mulai lebih membuka ekonominya dan memulai perbaikan ekonomi meskipun berjalan lambat.</div></p>
+
+	<h1 ID="filipina">FILIPINA</h1>
+<h2>sejarah negara filipina</h2>
+<p><div>Peninggalan tertulis Filipina dimulai sekitar abad ke-8 berdasarkan temuan lempeng tembaga di dekat Manila. Dari tulisan pada lempeng itu diketahui bahwa Filipina berada dalam pengaruh Sriwijaya. Namun bukti tertulis ini sangat sedikit sehingga bahkan ahli-ahli sejarah Filipina masih beranggapan sejarah Filipina dimulai pada era kolonialisme.
+
+Sebelum orang-orang Spanyol datang pada abad ke-16, di Filipina berdiri kerajaan-kerajaan kecil yang bercorak animisme yang terpengaruh sedikit kultur India, dan yang bercorak Islam di bagian selatan kepulauan. Kerajaan-kerajaan muslim ini mendapat pengaruh kuat dari Kerajaan Malaka.
+
+Sepanjang masa 265 tahun, Filipina merupakan koloni Kerajaan Spanyol (1565-1821), dan selama 77 tahun berikutnya diangkat menjadi provinsi Spanyol (1821-1898). Negara ini mendapat nama Filipina setelah diperintah oleh penguasa Spanyol, Raja Felipe II. 
+Setelah Perang Spanyol-Amerika pada tahun 1898, Filipina diperintah Amerika Serikat. Ia kemudian menjadi sebuah persemakmuran di bawah Amerika Serikat sejak tahun 1935. Periode Persemakmuran dipotong Perang Dunia II saat Filipina berada di bawah pendudukan Jepang. Filipina akhirnya memperoleh kemerdekaannya (de facto) pada 4 Juli 1946. 
+Masa-masa penjajahan asing ini sangat memengaruhi kebudayaan, dan masyarakat Filipina. Negara ini dikenal mempunyai Gereja Katolik Roma yang kuat, dan merupakan salah satu dari dua negara yang didominasi umat Katolik di Asia selain Timor Leste.</div></p>
+
+<div>
+<h3 ID="download">link download lagu kebangsaan</h3>
+<p><a href="https://cdn2.canehill.info/dl?hash=sbfgsOda%2F0n2Ve5XKeR6YGowRaCn2wbv4iqESgSvX%2B1vJuZApjps
+ViInobwgTQCJFRdOyo9PK0ClpXfsh4jo9VqnOYKznqr4cCmpmiZxG7L%2BMhUPwwuS%2FC6yWQd8TEbc7
+GvXYJb5Epxw7JaLr7hHrkPn0KlFia8KDXijJ6O5DPHLRTlgDMEH1GiwQk1YU%2FeJKw3%2FjsV4YqhBBKel1F%
+2BEndQF1qQARMR8qaTXuKBtD1orbCB01KvsSj3Xj64CiDhx">Lagu Kebangsaan Kamboja : Noko Reach</a></p>	
+<p><a href="https://cdn2.canehill.info/dl?hash=Xzubq8BegfzlVl6Wuc5h7qdJAZ6YurvvVOq9ce%2B9eOio3r6CtTDZI4aS
+J5YUOI%2Bj12oYbAwcvKHIUB89hUWA%2F5HETimZMags9ESa3ay78Ha3osiXdz%2Bhr7sz2s3WwvXjyGTyit
+Jt3bQodo7lmVzPo42E1WUaaUApqhe9gQRx2go2%2FLk27E5K9UL0CLCrhH23Twbc%2FGiECbv9xZeBRwq%
+2Fk0tLhpEiiKgGgEtVkrJJW6AvHFB4Ab6ROwZi13IESJSE">Lgu Kebangsaan Indonesia : Indonesia Raya</a></p>
+<p><a href="https://youtu.be/oTW2chhJ6DM?si=dl4y7V7frt-IE4LN"
+</div>
+<div>
+<h2 ID="tutorial">tutorial</h2>
+<iframe width="360" height="215" src="https://www.youtube.com/embed/7bqt5gYwyGA?si=tA5gTD5NYykO9xZu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="360" height="215" src="https://www.youtube.com/embed/TX0uYx_-N7A?si=LhDx0UtZFccF3f6x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe <iframe width="360" height="215" src="https://www.youtube.com/embed/DTWCzv5DQaA?si=HTCgdhQirk4f-1bW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe <iframe width="360" height="215" src="https://www.youtube.com/embed/46_ahklZ02k?si=JvcTN5-5BOt8sybh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe <iframe width="360" height="215" src="https://www.youtube.com/embed/ZIRPS3za4po?si=Ih9_UQ6-APHHS2-D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div class="footer-bottom">
+<div ID="kontak" class="social-media">
+<a href="https://www.facebook.com/smkluqmanalhakim.kudus"><img src="facebook.png"></a>
+<a href="https://www.instagram.com/smkluqmanalhakim.kudus/?hl=id"><img src="instagram.png"></a>
+<a href="https://www.youtube.com/@smkluqmanalhakimkudus7189/about""><img src="youtube.png"></a>
+<p>hak cipta &copy:2023 asia tenggara. hak cipta dilindungi.</p>
+</div>
+</body>
+</html>
